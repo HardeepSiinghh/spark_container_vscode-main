@@ -1,0 +1,22 @@
+{
+  "name": "Spark Delta Dev",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "sparkuser",
+  "updateRemoteUserUID": true,
+  "containerUser": "sparkuser",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring"
+      ]
+    }
+  }
+}
